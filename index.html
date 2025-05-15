@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Intingolo Astesano | Ristorante Pizzeria Asti</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">L'Intingolo <span>Astesano</span></a>
+            
+            <nav>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">Chi Siamo</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Galleria</a></li>
+                    <li><a href="#events">Eventi</a></li>
+                    <li><a href="#contact">Contatti</a></li>
+                </ul>
+            </nav>
+            
+            <div class="language-switcher">
+                <select id="language-select">
+                    <option value="it">IT</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-translate="hero_title">Cucina Italiana Autentica ad Asti</h1>
+                <p data-translate="hero_subtitle">Dove la tradizione piemontese incontra l'innovazione culinaria in un'atmosfera elegante e accogliente</p>
+                <div class="hero-btns">
+                    <a href="#reservation" class="btn" data-translate="reserve_button">Prenota un Tavolo</a>
+                    <a href="#menu" class="btn btn-outline" data-translate="menu_button">Vedi il Menu</a>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title" data-translate="about_title">Chi Siamo</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-translate="about_text1">Fondato nel gennaio 2015 da Francisco e Mara, L'Intingolo Astesano nasce dal sogno di unire la cucina tradizionale astigiana con nuovi sapori originali. Francisco, lo chef creativo, e Mara, che accoglie gli ospiti con il sorriso, hanno trasformato la loro passione comune in un progetto di vita.</p>
+                    <p data-translate="about_text2">La nostra filosofia è chiara: offrire piatti tradizionali piemontesi e specialità mediterranee rivisitate con estro, mantenendo un forte legame con le radici locali e la stagionalità degli ingredienti.</p>
+                    <a href="#" class="btn" data-translate="learn_more">Scopri di Più</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Interno del Ristorante">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights section">
+        <div class="container">
+            <h2 class="section-title" data-translate="highlights_title">Perché Sceglierci</h2>
+            
+            <div class="highlight-cards">
+                <div class="highlight-card">
+                    <div class="highlight-img">
+                        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Ingredienti di Qualità">
+                    </div>
+                    <div class="highlight-content">
+                        <h3 data-translate="quality_title">Ingredienti di Qualità</h3>
+                        <p data-translate="quality_text">Utilizziamo solo i migliori ingredienti locali e stagionali per creare sapori autentici.</p>
+                        <a href="#" class="btn btn-outline" data-translate="learn_more">Scopri di Più</a>
+                    </div>
+                </div>
+                
+                <div class="highlight-card">
+                    <div class="highlight-img">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1398&q=80" alt="Pizza Artigianale">
+                    </div>
+                    <div class="highlight-content">
+                        <h3 data-translate="pizza_title">Pizza Artigianale</h3>
+                        <p data-translate="pizza_text">Il nostro impasto a lunga lievitazione e il forno a legna creano una crosta croccante ma leggera.</p>
+                        <a href="#menu" class="btn btn-outline" data-translate="view_menu">Vedi il Menu</a>
+                    </div>
+                </div>
+                
+                <div class="highlight-card">
+                    <div class="highlight-img">
+                        <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Atmosfera Accogliente">
+                    </div>
+                    <div class="highlight-content">
+                        <h3 data-translate="atmosphere_title">Atmosfera Accogliente</h3>
+                        <p data-translate="atmosphere_text">Sperimenta il perfetto mix di eleganza e comfort nel nostro spazio progettato con cura.</p>
+                        <a href="#gallery" class="btn btn-outline" data-translate="view_gallery">Vedi Galleria</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview Section -->
+    <section class="menu-preview section" id="menu">
+        <div class="container">
+            <h2 class="section-title" data-translate="menu_title">Il Nostro Menu</h2>
+            
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="all" data-translate="all_items">Tutto</button>
+                <button class="menu-tab" data-category="starters" data-translate="starters">Antipasti</button>
+                <button class="menu-tab" data-category="pasta" data-translate="pasta">Pasta</button>
+                <button class="menu-tab" data-category="pizza" data-translate="pizza">Pizza</button>
+                <button class="menu-tab" data-category="desserts" data-translate="desserts">Dolci</button>
+                <button class="menu-tab" data-category="vegan" data-translate="vegan">Vegano</button>
+                <button class="menu-tab" data-category="kids" data-translate="kids">Bambini</button>
+            </div>
+            
+            <div class="menu-items">
+                <!-- Menu items will be loaded dynamically via JavaScript -->
+            </div>
+            
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="lintingoloastesano.qromo.it" class="btn" target="_blank" data-translate="full_menu">Menu Completo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation section" id="reservation">
+        <div class="container">
+            <h2 class="section-title" data-translate="reservation_title">Prenota un Tavolo</h2>
+            
+            <div class="reservation-form">
+                <form id="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" data-translate="full_name">Nome Completo</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-translate="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone" data-translate="phone">Telefono</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests" data-translate="guests">Numero di Ospiti</label>
+                            <select id="guests" required>
+                                <option value="1" data-translate="1_person">1 Persona</option>
+                                <option value="2" data-translate="2_people">2 Persone</option>
+                                <option value="3" data-translate="3_people">3 Persone</option>
+                                <option value="4" data-translate="4_people">4 Persone</option>
+                                <option value="5" data-translate="5_people">5 Persone</option>
+                                <option value="6" data-translate="6_people">6 Persone</option>
+                                <option value="7" data-translate="7_people">7+ Persone</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date" data-translate="date">Data</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time" data-translate="time">Ora</label>
+                            <select id="time" required>
+                                <option value="12:00" data-translate="12pm">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="notes" data-translate="special_requests">Richieste Speciali</label>
+                        <textarea id="notes" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn" data-translate="confirm_reservation">Conferma Prenotazione</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Private Dining Section -->
+    <section class="private-dining section" id="private">
+        <div class="container">
+            <h2 class="section-title" data-translate="private_dining">Cene Private</h2>
+            
+            <div class="private-content">
+                <div class="private-text">
+                    <p data-translate="private_text1">Offriamo un'esperienza di ristorazione esclusiva per eventi privati, cene aziendali e celebrazioni speciali. La nostra sala privata può ospitare fino a 30 persone in un'atmosfera intima ed elegante.</p>
+                    <p data-translate="private_text2">Il nostro team sarà lieto di creare un menu personalizzato per la vostra occasione speciale, con opzioni che spaziano dalla tradizione piemontese alle creazioni gourmet dello chef.</p>
+                    <a href="#contact" class="btn btn-outline" data-translate="inquire_now">Richiedi Ora</a>
+                </div>
+                <div class="private-image">
+                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sala Privata">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events section" id="events">
+        <div class="container">
+            <h2 class="section-title" data-translate="events_title">Eventi Speciali</h2>
+            
+            <div class="event-cards">
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Serata del Tartufo">
+                        <div class="event-date">
+                            <span class="event-day">15</span>
+                            <span class="event-month" data-translate="october">Ott</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3 data-translate="truffle_night">Serata del Tartufo</h3>
+                        <p data-translate="truffle_description">Un menu speciale dedicato al tartufo bianco d'Alba, con degustazione guidata dallo chef.</p>
+                        <a href="#reservation" class="btn btn-outline" data-translate="book_now">Prenota Ora</a>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="https://images.unsplash.com/photo-1532635241-17e820acc59f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" alt="Cena con lo Chef">
+                        <div class="event-date">
+                            <span class="event-day">28</span>
+                            <span class="event-month" data-translate="november">Nov</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3 data-translate="chef_dinner">Cena con lo Chef</h3>
+                        <p data-translate="chef_description">Una cena esclusiva di 5 portate con presentazione dello chef Francisco.</p>
+                        <a href="#reservation" class="btn btn-outline" data-translate="book_now">Prenota Ora</a>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Degustazione di Vini">
+                        <div class="event-date">
+                            <span class="event-day">10</span>
+                            <span class="event-month" data-translate="december">Dic</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3 data-translate="wine_tasting">Degustazione di Vini</h3>
+                        <p data-translate="wine_description">Abbinamento di vini piemontesi con piatti della tradizione.</p>
+                        <a href="#reservation" class="btn btn-outline" data-translate="book_now">Prenota Ora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <h2 class="section-title" data-translate="gallery_title">Galleria</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Interno del Ristorante">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Piatti Gourmet">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1398&q=80" alt="Pizza Artigianale">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Atmosfera">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Eventi Speciali">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1532635241-17e820acc59f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" alt="Chef al Lavoro">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section">
+        <div class="container">
+            <h2 class="section-title" data-translate="testimonials_title">Cosa Dicono di Noi</h2>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-img">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Maria Rossi">
+                    </div>
+                    <div class="testimonial-text">
+                        <p data-translate="testimonial1">"La migliore pizza che abbia mai mangiato! L'atmosfera è incantevole e il servizio impeccabile. Tornerò sicuramente!"</p>
+                    </div>
+                    <div class="testimonial-author">Maria Rossi</div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-img">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Luigi Bianchi">
+                    </div>
+                    <div class="testimonial-text">
+                        <p data-translate="testimonial2">"Il vitello tonnato è sublime e la selezione di vini locali è eccellente. Un vero gioiello astigiano!"</p>
+                    </div>
+                    <div class="testimonial-author">Luigi Bianchi</div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-img">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Anna Verdi">
+                    </div>
+                    <div class="testimonial-text">
+                        <p data-translate="testimonial3">"Abbiamo organizzato qui la nostra cena di laurea e tutto è stato perfetto. Menu personalizzato e servizio attento."</p>
+                    </div>
+                    <div class="testimonial-author">Anna Verdi</div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-nav">
+                    <div class="testimonial-dot active"></div>
+                    <div class="testimonial-dot"></div>
+                    <div class="testimonial-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact_title">Contatti</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 data-translate="visit_us">Vienici a trovare</h3>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Corso Vittorio Alfieri, 100, 14100 Asti AT, Italia</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+39 0141 354086</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@lintingolo.it</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>
+                                <strong data-translate="opening_hours">Orari di Apertura:</strong><br>
+                                <span data-translate="lunch">Pranzo:</span> 12:00 - 14:30 (Martedì - Domenica)<br>
+                                <span data-translate="dinner">Cena:</span> 19:00 - 23:00 (Tutti i giorni)
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <h3 style="margin-top: 30px;" data-translate="follow_us">Seguici</h3>
+                    <div class="contact-social">
+                        <a href="https://www.facebook.com/lintingoloastesano" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/lintingoloastesano" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.986358423492!2d8.201215315534844!3d44.89997997909829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4787b9c0e5c6a0a9%3A0x1a3b1d1b1b1b1b1b!2sL&#39;Intingolo%20Astesano!5e0!3m2!1sit!2sit!4v1620000000000!5m2!1sit!2sit" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4 data-translate="restaurant">Ristorante</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about" data-translate="about_us">Chi Siamo</a></li>
+                        <li><a href="#menu" data-translate="our_menu">Il Nostro Menu</a></li>
+                        <li><a href="#gallery" data-translate="gallery">Galleria</a></li>
+                        <li><a href="#events" data-translate="events">Eventi</a></li>
+                        <li><a href="#contact" data-translate="contact">Contatti</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-translate="information">Informazioni</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-translate="privacy_policy">Privacy Policy</a></li>
+                        <li><a href="#" data-translate="terms_conditions">Termini e Condizioni</a></li>
+                        <li><a href="#" data-translate="cookie_policy">Cookie Policy</a></li>
+                        <li><a href="#" data-translate="faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-translate="contact_us">Contattaci</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Corso Vittorio Alfieri, 100, Asti</li>
+                        <li><i class="fas fa-phone"></i> +39 0141 354086</li>
+                        <li><i class="fas fa-envelope"></i> info@lintingolo.it</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 data-translate="newsletter">Newsletter</h4>
+                    <p data-translate="newsletter_text">Iscriviti per ricevere aggiornamenti su eventi speciali e promozioni.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="La tua email" required>
+                        <button type="submit" class="btn" data-translate="subscribe">Iscriviti</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> L'Intingolo Astesano. <span data-translate="all_rights">Tutti i diritti riservati.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent">
+        <div class="cookie-content">
+            <p data-translate="cookie_message">Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito. Continuando a navigare, accetti il nostro uso dei cookie.</p>
+            <div class="cookie-btns">
+                <button class="btn btn-outline" id="cookie-accept" data-translate="accept">Accetta</button>
+                <a href="#" class="cookie-link" data-translate="learn_more">Scopri di più</a>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
